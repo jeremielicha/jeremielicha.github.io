@@ -163,9 +163,9 @@
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Stage en entreprise au SII</h3>
-              <div class="subheading mb-3">Ruby on rails</div>
+              <h3 class="mb-0">Stage en entreprise au SII</h3><br>
               <p>
+                SII est une entreprise de services du numérique.<br>
                 On m'a donné comme projet à faire une application web avec le framework ruby on rails consistant à faire des signalements de voieries.<br>
                 J'ai découvert le concept d'architecture MVC à travers ce projet.
               </p>
@@ -177,16 +177,15 @@
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Stage et Alternance en entreprise</h3>
-              <div class="subheading mb-3">Symfony 5</div>
+              <h3 class="mb-0">Stage et Alternance en entreprise</h3><br>
+              <h5>Présentation de l'entreprise</h5>
               <p>
                 J'ai été affecté au centre CNFSICG (Centre Nationale de Formation aux Systèmes d'Information et de Communication de la Gendarmerie)<br>
+
+
+
                 J'ai découvert alors les métiers de travaux en hauteur et ainsi pu faire une initiation sur tout ce qu'il fallait savoir sur les EPIs (Equipements de Protection Individuelle) et leurs fonctionnement.
                 J'ai ainsi été ammené à en faire une application web à l'aide du framework symfony en php.
-              </p>
-              <p>
-                J'ai apris les bases du Linux.
-                J'ai pu participé à une formation sur les bases de Javascript.
               </p>
             </div>
             <div class="resume-date text-md-right">
@@ -243,21 +242,33 @@
                   Utilisé en local, cette interface pourrait s’intégrer à l’outil Sol@ris (Application de la gendarmerie)
                   et ainsi permettre à tous les techniciens de travailler sur une plate-forme unique.
                 </p>
-                <p>
-                  <h3>Organisation du projet</h3><br>
-                  <ul>
-                    <li class="list-group-item">
-                      <h5>Réalisation du schema de la base de donnée</h5>
-                      <img src="img/MCD-Alepin.png">
-                    </li><br>
-                    <li class="list-group-item">
-                      <h5>Réalisation du schema des cas d'utilisations</h5>
-                    </li><br>
-                    <li class="list-group-item">
-                      <h5>Création des taches dans le Kanban sur le gitlab</h5>
-                    </li><br>
-                  </ul>
-                </p>
+
+
+
+
+
+                <h3>Organisation du projet</h3>
+                <ul>
+                  <li class="collapsible list-group-item">Réalisation du schema de la base de donnée</li>
+                  <div class="content">
+                    <img src="img/MCD-Alepin.png">
+                  </div>
+
+                  <li class="collapsible list-group-item">Réalisation du schema des cas d'utilisations</li>
+                  <div class="content">
+                    <img src="img/MCD-Alepin.png">
+                  </div>
+
+                  <li class="collapsible list-group-item">Création des taches dans le Kanban sur le gitlab</li>
+                  <div class="content">
+                    <img src="img/MCD-Alepin.png">
+                  </div>
+                </ul>
+
+
+
+
+
               </div>
               <div class="panel" id="two-panel">
                 <h3>Projet d'école</h3>
@@ -382,6 +393,22 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
 
   </body>
 
