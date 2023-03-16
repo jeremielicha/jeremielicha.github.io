@@ -32,7 +32,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/me.jpg" alt="JL">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/photo.jpg" alt="JL">
         </span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -77,7 +77,7 @@
           </h3>
           <ul class="list-inline list-social-icons mb-0">
             <li class="list-inline-item">
-                <a href="cv/cv.pdf" type="submit">
+                <a href="pdf/cv.pdf" type="submit">
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i class="fa fa-stack-1x fa-inverse">CV</i>
@@ -178,15 +178,31 @@
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Stage et Alternance en entreprise</h3><br>
+              <p>Situé à 1 Bd Théophile Sueur dans le 93 à Rosgny-sous-Bois</p>
               <h5>Présentation de l'entreprise</h5>
               <p>
                 J'ai été affecté au centre CNFSICG (Centre Nationale de Formation aux Systèmes d'Information et de Communication de la Gendarmerie)<br>
-
-
-
-                J'ai découvert alors les métiers de travaux en hauteur et ainsi pu faire une initiation sur tout ce qu'il fallait savoir sur les EPIs (Equipements de Protection Individuelle) et leurs fonctionnement.
+                J'ai découvert alors les métiers de travaux en hauteur et ainsi pu faire une initiation sur tout ce qu'il fallait savoir sur les EPIs (Equipements de Protection Individuelle) et leurs fonctionnement.<br>
                 J'ai ainsi été ammené à en faire une application web à l'aide du framework symfony en php.
+              <p>
+                Il existe plusieurs centres de formations dans la gendarmerie.<br>
+                Le CNFSICG forme des gendarmes dans les domaines de l’informatique, des télécommunications et autres nouvelles technologies.<br>
               </p>
+              <p>
+                Le centre a pour mission de former des officiers et des sous-officiers.<br>
+                Le CNFSICG assure la formation initiale des officiers et des sous-officiers qui se destinent à un emploi dans la spécialité des SIC (Système d’Information et de Communication)
+              </p>
+              <p>
+                Le CNFSICG dispose de tours de télécommunications. Cependant ces tours doivent être entretenues en cas de dépannage ou d’installation (antennes…)<br>
+                Pour cela, des EPI (Equipement de Protection Individuel) sont utilisés pour garantir la sécurité aux gendarmes SIC.
+              </p>
+              <img class="p-5 img" src="img/th.png" alt="th1">
+              <img class="p-5 img" src="img/th2.png" alt="th2">
+              <h5 style="font-size: large" class="collapsible list-group-item">Organisation du centre</h5>
+              <div class="content"><br>
+                <img style="width: 1000px;height: 600px" src="img/Orga.jpg">
+                <p>Environ 1500 personnels dans le centre CNFSICG</p>
+              </div>
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">2021 - 2023</span>
@@ -212,21 +228,12 @@
               <div class="panel" id="one-panel">
                 <h3>Projet d'entreprise</h3>
                 <div class="panel-title">Application Locale des Équipements de Protection Individuelle Nouvelle-génération</div><br>
-                <h5>Présentation de l'entreprise</h5>
-                <p>
-                  Le Centre national de formation aux systèmes d’information et de communication de la gendarmerie (CNFSICG)
-                  forme des gendarmes dans les domaines de l’informatique, des télécommunications et autres nouvelles technologies.
+                  <h5>But du projet</h5>
+                  Le projet a pour but de créer une interface web liée à une base de données gérée en langage SQL.<br>
+                  Utilisé en local, cette interface pourrait s’intégrer à l’outil Sol@ris (Application de la gendarmerie)
+                  et ainsi permettre à tous les techniciens de travailler sur une plate-forme unique.
                 </p>
-                <p>
-                  Le centre a pour mission de former des officiers et des sous-officiers qui pourront appuyer efficacement la manœuvre opérationnelle des unités territoriales.<br>
-                  Le CNFSICG assure la formation initiale des officiers et des sous-officiers qui se destinent à un emploi dans la spécialité des SIC (Système d’Information et de Communication)
-                </p>
-                <p>
-                  Le CNFSICG dispose de tours de télécommunications. Cependant ces tours doivent être entretenues en cas de dépannage ou d’installation (antennes…)<br>
-                  Pour cela, des EPI (Equipement de Protection Individuel) sont utilisés pour garantir la sécurité aux gendarmes SIC.
-                </p>
-                <img class="p-5 img" src="img/th.png" alt="th1">
-                <img class="p-5 img" src="img/th2.png" alt="th2">
+
                 <h5>Logiciels et outils utilisés</h5>
                 <ul>
                   <li>Linux</li>
@@ -235,17 +242,8 @@
                   <li>Symfony 5</li>
                   <li>SGBD : PostgreSQL</li>
                   <li>Docker</li>
+                  <li>Gitlab</li>
                 </ul>
-                <p>
-                  <h5>But du projet</h5>
-                  Le projet a pour but de créer une interface web liée à une base de données gérée en langage SQL.<br>
-                  Utilisé en local, cette interface pourrait s’intégrer à l’outil Sol@ris (Application de la gendarmerie)
-                  et ainsi permettre à tous les techniciens de travailler sur une plate-forme unique.
-                </p>
-
-
-
-
 
                 <h3>Organisation du projet</h3>
                 <ul>
@@ -256,20 +254,24 @@
 
                   <li class="collapsible list-group-item">Réalisation du schema des cas d'utilisations</li>
                   <div class="content">
-                    <img src="img/MCD-Alepin.png">
+                    <img class="img-usecase" src="img/use_case_connexion.png">
+                    <img class="img-usecase" src="img/use_case_gestionEPI.png">
+                    <img class="img-usecase" src="img/use_case_gestion_users.png">
+                    <img style="width: 500px; height: 800px; margin: 50px" src="img/use_case_dashboard.png">
+
                   </div>
 
-                  <li class="collapsible list-group-item">Création des taches dans le Kanban sur le gitlab</li>
+                  <li class="collapsible list-group-item">Gestion des taches dans le Kanban sur le gitlab</li>
                   <div class="content">
-                    <img src="img/MCD-Alepin.png">
                   </div>
                 </ul>
-
-
-
-
-
+                <h3>Problèmes rencontrés</h3>
+                <ul>
+                  <li>Installation du projet sur l'intranet de la gendarmerie</li>
+                  <li>Gestion d'une connection en web SSO</li>
+                </ul>
               </div>
+
               <div class="panel" id="two-panel">
                 <h3>Projet d'école</h3>
                 <h5>Présentation du projet</h5>
@@ -281,16 +283,15 @@
                   Pour la partie backend j'ai commencé à apprendre le concept de MVC (Models,Vues,Contrôleurs) en utilisant "FastRoute", une bibliothèques qui permet de gérer les routes.
                 </p>
                 <p>
-                  Ce projet m'a permis d'acquérir beaucoup de notions dans le développement web.
+                  Ce projet m'a permis d'acquérir beaucoup de notions de base dans le développement web.
                 </p>
               </div>
               <div class="panel" id="three-panel">
                 <h3>Projet d'école</h3>
                 <div class="panel-title">Application d'une auto-école</div><br>
                 <h5>Présentation du projet</h5>
-                <p>
-                  Ce projet avait pour but de réaliser une application web groupe de 3 sur le framework symfony.
-                </p>
+                <p>Ce projet avait pour but de réaliser une application en web (php) et en client lourd (java).</p>
+                <a href="pdf/Projet_Auto-école.pdf">Cahier des charges</a>
               </div>
             </div>
           </div>
@@ -303,11 +304,6 @@
 
           <div class="subheading mb-3">Outils, supports et languages de programmation</div>
           <ul class="list-inline list-icons">
-            <li class="list-inline-item">
-              <i class="devicons devicons-windows">
-                <p class="icon-competences">Windows</p>
-              </i>
-            </li>
             <li class="list-inline-item">
               <i class="devicons devicons-linux">
                 <p class="icon-competences">Linux</p>
@@ -334,11 +330,6 @@
               </i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-mysql">
-                <p class="icon-competences">MySQL</p>
-              </i>
-            </li>
-            <li class="list-inline-item">
               <i class="devicons devicons-symfony">
                 <p class="icon-competences">Symfony</p>
               </i>
@@ -356,11 +347,6 @@
             <li class="list-inline-item">
               <i class="devicons devicons-jquery">
                 <p class="icon-competences">JQuery</p>
-              </i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-bootstrap">
-                <p class="icon-competences">Boostrap</p>
               </i>
             </li>
             <li class="list-inline-item">
